@@ -1,0 +1,104 @@
+/* 基本樣式 */
+body {
+     font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    color: #e7d8d8;
+}
+
+/* 標題樣式 */
+ h2 {
+    color: #915510;
+
+}
+
+/* 導航欄樣式 */
+header {
+    background-color: #daecd5;
+    color: #b47a7a;
+    padding: 2px 0;
+}
+header img{
+width: 150px;
+}
+header h1{
+   
+}
+
+.header-content {
+width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 50px;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #a26c6c;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+/* 主要內容區域樣式 */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+.hero, .about, .services, .contact {
+    background-color: #f8f9fa;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+.hero-content, .about-content, .services-content, .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: #586c81;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #0056b3;
+}
+
+/* 頁腳樣式 */
+footer {
+    background-color: #9cc566;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
