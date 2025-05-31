@@ -1,43 +1,84 @@
+
 /* 基本樣式 */
+
 body {
-     font-family: 'Courier New', monospace;
-    margin: 0;
-    padding: 0;
-    color: #e7d8d8;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #d7f3d0;
 }
 
 /* 標題樣式 */
- h2 {
-    color: #915510;
+h2 {
+    color: #c59054;
 
 }
+.header__nav__list__item__link {
+    color: #005c55;
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: .06em;
+    line-height: 1.1666666667em;
+    overflow: hidden;
+    padding: .5rem 0;
+    position: relative;
+}
+
+/* #title1{
+      text-align: center;
+  font-size: 24px;
+  color: #a16c6c;
+
+} */
 
 /* 導航欄樣式 */
 header {
-    background-color: #daecd5;
-    color: #b47a7a;
-    padding: 2px 0;
-}
-header img{
-width: 150px;
-}
-header h1{
    
+     
+}
+
+header img {
+    width:200px;
+    border-right: 1px solid #ccc;
+       padding-right: 50px;
+       padding-left: 50px;
+    
 }
 
 .header-content {
-width: 100%;
-    margin: 0 auto;
+    width: 85%;
+    color: #ba8e62;
+    background-color: #ffffff;
+     /* padding: 2px 0; */
+    margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 80px 80px 80px 80px;
+    
+
+
+
+}
+
+.header-content #title1 {
+    margin-left: 220px;
+     /* border-left: 1px solid #ccc;
+       padding-left: 50px;
+      */
+
 }
 
 nav ul {
     list-style-type: none;
-    margin: 50px;
+    margin: 30px;
     padding: 0;
     display: flex;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em;
+padding-inline-start: 40px;
+unicode-bidi: isolate; */
+
 }
 
 nav li {
@@ -47,30 +88,44 @@ nav li {
 nav a {
     color: #a26c6c;
     text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    
+   
+    /* 添加漸變和放大效果 */
 }
 
 nav a:hover {
-    color: #ccc;
+    color: #ddacac;
+    transform: scale(1.5);
+    transform: rotate(10deg);
+     
+    /* 放大效果 */
 }
 
 /* 主要內容區域樣式 */
 main {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 10px 10px;
 }
 
 section {
     margin-bottom: 60px;
 }
 
-.hero, .about, .services, .contact {
+.hero,
+.about,
+.services,
+.contact {
     background-color: #f8f9fa;
     padding: 40px;
     border-radius: 8px;
 }
 
-.hero-content, .about-content, .services-content, .contact-content {
+.hero-content,
+.about-content,
+.services-content,
+.contact-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -78,16 +133,17 @@ section {
 
 .contact-btn {
     display: inline-block;
-    background-color: #586c81;
+    background-color: #132334;
     color: #fff;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
-    transition: background-color 0.3s;
+     transform: rotate(10deg);
+     
 }
 
 .contact-btn:hover {
-    background-color: #0056b3;
+    /* background-color: #0056b3; */
 }
 
 /* 頁腳樣式 */
