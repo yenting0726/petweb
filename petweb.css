@@ -6,7 +6,7 @@
     justify-content: flex-start; /* 左對齊 */
     left: 12rem; /* 左邊距 */
     position: fixed; /* 固定定位 */
-    top: 11rem; /* 上邊距 */
+    top: 8rem; /* 上邊距 */
     width: calc(100% - 24rem); /* 寬度計算 */
     z-index: 1000; /* z-index 層級 */
 }
@@ -27,18 +27,168 @@
     opacity: 1; /* 固定時透明度改為 1 */
     transition: none; /* 取消過渡效果 */
 }
+@media (max-width: 767px) {
+    html {
+        font-size:calc(var(--vw)/37.5); /* 計算字體大小 */
+    }
 
-.hoverRoll__mask {
-    display: block;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    width: auto;
+    br.pcbr {
+        display: none; /* 隱藏特定的 br 元素 */
+    }
+
+    .wrapper {
+        overflow: hidden; /* 隱藏溢出內容 */
+        position: relative; /* 相對定位 */
+    }
+}
+@media (min-width: 768px) {
+    br.spbr {
+        display:none; /* 隱藏特定的 br 元素 */
+    }
 }
 
-.hoverRoll__mask .hoverRoll__text {
-    display: block;
+.index__firstview {
+    z-index: 1
+}
+
+.index__firstview,.index__firstview__bg {
+    height: auto;
+    position: relative;
     width: 100%
+}
+
+.index__firstview__bg {
+    align-items: flex-end;
+    background-color: #ecf3f2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    min-height: 100svh;
+    padding-top: 42.5svh;
+    transform: scale(1.2);
+    transform-origin: 50% 50svh;
+    transition: transform 3s cubic-bezier(.19,1,.22,1) .5s
+}
+
+body.active .index__firstview__bg {
+    transform: scale(1)
+}
+
+.index__firstview__bg img {
+    display: block;
+    height: auto;
+    width: 100%
+}
+
+.index__firstview__hero {
+    height: 100svh;
+    left: 0;
+    min-height: 60rem;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.index__firstview__hero__main {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%)
+}
+
+.index__firstview__hero__logo {
+    height: 5.6rem;
+    position: relative;
+    width: 72rem
+}
+
+.index__firstview__hero__logo img {
+    display: block;
+    height: 100%;
+    width: 100%
+}
+
+.index__firstview__hero__open {
+    color: #094;
+    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-size: 3.6rem;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.2222222222em;
+    margin-top: 1rem;
+    text-align: center
+}
+
+.index__firstview__hero__scroll {
+    bottom: 4rem;
+    font-size: 1.2rem;
+    letter-spacing: .03em;
+    line-height: 1.5em;
+    position: absolute;
+    right: 4rem;
+    transform: translateY(100%) rotate(90deg);
+    transform-origin: top right
+}
+
+@media (max-width: 767px) {
+    .index__firstview__bg {
+        padding-top:max(16rem,34.5svh)
+    }
+
+    body.active .index__firstview__bg {
+        transform: scale(1)
+    }
+
+    .index__firstview__bg img {
+        display: block;
+        height: auto;
+        width: 72rem
+    }
+
+    .index__firstview__hero {
+        min-height: 0
+    }
+
+    .index__firstview__hero__main {
+        top: max(16rem,37.5svh);
+        transform: translate(-50%,calc(-50% - 18px))
+    }
+
+    .index__firstview__hero__logo {
+        height: 6rem;
+        overflow: hidden;
+        position: relative;
+        width: 23.1rem
+    }
+
+    .index__firstview__hero__logo:after {
+        background-image: url(../images/logotype.svg);
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+        background-size: 34.5rem 2.7rem;
+        content: "";
+        display: block;
+        height: 2.7rem;
+        margin: .4rem auto 0;
+        width: 10.8rem
+    }
+
+    .index__firstview__hero__logo img {
+        display: block;
+        height: 2.7rem;
+        width: 34.5rem
+    }
+
+    .index__firstview__hero__open {
+        font-size: 2.1rem;
+        letter-spacing: 0;
+        line-height: 1.5238095238em;
+        margin-top: 1rem
+    }
+
+    .index__firstview__hero__scroll {
+        display: none
+    }
 }
 
 .hoverRoll__mask .hoverRoll__text+.hoverRoll__text {

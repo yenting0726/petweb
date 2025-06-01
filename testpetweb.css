@@ -631,7 +631,7 @@ body:not(.touch) .footer__partner a:hover:after {
         top: -1.4rem; /* 上邊距 */
         width: 100%; /* 寬度 100% */
     }
-
+}
     .footintermission__breadcrumb__list {
         -ms-overflow-style: none; /* 隱藏滾動條樣式 */
         display: block; /* 設定為塊級元素 */
@@ -2793,8 +2793,10 @@ body.active .index__firstview__bg {
         left: -.7rem;
         margin-left: auto;
         margin-right: auto
+        
     }
 }
+
 
 .index__concept {
     height: auto;
@@ -4910,7 +4912,7 @@ body.mswin .topics__index__block__detail__category {
 
 .topics__index__block__detail__title__text {
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    /* -webkit-line-clamp: 2; */
     display: -webkit-box;
     font-size: 1.4rem;
     letter-spacing: .06em;
