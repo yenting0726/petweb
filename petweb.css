@@ -1,3 +1,65 @@
+.header {
+    align-items: center; /* 垂直居中對齊 */
+    display: flex; /* 設定為彈性盒子 */
+    flex-flow: row nowrap; /* 水平排列，不換行 */
+    height: 0; /* 高度為 0 */
+    justify-content: flex-start; /* 左對齊 */
+    left: 12rem; /* 左邊距 */
+    position: fixed; /* 固定定位 */
+    top: 11rem; /* 上邊距 */
+    width: calc(100% - 24rem); /* 寬度計算 */
+    z-index: 1000; /* z-index 層級 */
+}
+.header__bg {
+    background-color: #fff; /* 背景顏色為白色 */
+    border-radius: 6rem; /* 圓角半徑 */
+    box-shadow: 0 0 .5rem 0 rgba(0,0,0,.1); /* 陰影效果 */
+    height: 12rem; /* 高度 */
+    left: calc(50% - 67rem); /* 左邊距 */
+    opacity: 0; /* 初始透明度 */
+    position: absolute; /* 絕對定位 */
+    top: calc(50% - 6rem); /* 上邊距 */
+    transition: opacity .1s linear; /* 透明度過渡效果 */
+    width: 134rem; /* 寬度 */
+}
+
+.header.stick .header__bg {
+    opacity: 1; /* 固定時透明度改為 1 */
+    transition: none; /* 取消過渡效果 */
+}
+
+.hoverRoll__mask {
+    display: block;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+
+.hoverRoll__mask .hoverRoll__text {
+    display: block;
+    width: 100%
+}
+
+.hoverRoll__mask .hoverRoll__text+.hoverRoll__text {
+    left: 0;
+    position: absolute;
+    top: calc(100% + 2px)
+}
+
+.hoverRoll.hover .hoverRoll__mask .hoverRoll__text {
+    animation: textRollOver .75s cubic-bezier(.19,1,.22,1) 0s 1 normal none!important
+}
+@keyframes textRollOver {
+    0% {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(calc(-100% - 2px))
+    }
+}
+
 
 /* 基本樣式 */
 
@@ -13,16 +75,6 @@ h2 {
     color: #c59054;
 
 }
-.header__nav__list__item__link {
-    color: #005c55;
-    display: block;
-    font-size: 1.2rem;
-    letter-spacing: .06em;
-    line-height: 1.1666666667em;
-    overflow: hidden;
-    padding: .5rem 0;
-    position: relative;
-}
 
 /* #title1{
       text-align: center;
@@ -32,30 +84,26 @@ h2 {
 } */
 
 /* 導航欄樣式 */
-header {
-   
-     
-}
+
 
 header img {
-    width:200px;
+    width: 200px;
     border-right: 1px solid #ccc;
-       padding-right: 50px;
-       padding-left: 50px;
-    
+    padding-right: 50px;
+    padding-left: 50px;
+
 }
 
 .header-content {
     width: 85%;
     color: #ba8e62;
     background-color: #ffffff;
-     /* padding: 2px 0; */
+    /* padding: 2px 0; */
     margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-radius: 80px 80px 80px 80px;
-    
 
 
 
@@ -63,7 +111,7 @@ header img {
 
 .header-content #title1 {
     margin-left: 220px;
-     /* border-left: 1px solid #ccc;
+    /* border-left: 1px solid #ccc;
        padding-left: 50px;
       */
 
@@ -88,17 +136,17 @@ nav li {
 nav a {
     color: #a26c6c;
     text-decoration: none;
-    transition: color 0.3s, transform 0.3s;
-    
-   
+    /* transition: color 0.3s, transform 0.3s; */
+
+
     /* 添加漸變和放大效果 */
 }
 
 nav a:hover {
-    color: #ddacac;
-    transform: scale(1.5);
-    transform: rotate(10deg);
-     
+    /* color: #ddacac; */
+    /* transform: scale(1.5);
+    transform: rotate(10deg); */
+
     /* 放大效果 */
 }
 
@@ -138,12 +186,12 @@ section {
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
-     transform: rotate(10deg);
-     
+    transform: rotate(10deg);
+
 }
 
 .contact-btn:hover {
-    /* background-color: #0056b3; */
+    background-color: #a5aeb8;
 }
 
 /* 頁腳樣式 */

@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Zen+Kaku+Gothic+Antique&display=swap"
         rel="stylesheet">
     <meta charset="UTF-8">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>帶狗散步</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -20,25 +20,58 @@
 
 </head>
 
-<body>
-    
-    <header>
-        
-        <div class="header-content shadow-xl ">
- <img src="./dogweb/去背LOGO.png" alt=""> 
-              
-           
-          <span class="h2 align-text-bottom" id="title1">和狗一起</span>
-           
-          <nav>
-                <ul>
-                    <li><a href="#">寵物用品</a></li>
-                    <li><a href="#">寵物公園</a></li>
-                    <li ><a href="#">聯絡我們</a></li>
+<body class="index">
+<header class="header"> <!-- 頁首 -->
+    <div class="header__bg"></div> <!-- 頁首背景 -->
+    <h1 class="header__logo"> <!-- 標題標誌 -->
+        <a class="header__logo__link" href="https://megrassgarden-n.com/"><img src="https://megrassgarden-n.com/images/logo_h.svg" width="165" height="80" alt="Megrass Garden Nagoya"></a> <!-- 標誌圖片 -->
+        <span class="header__logo__info"><span><span>Spring 2026 Open</span></span></span></h1> <!-- 開放信息 -->
+    <div class="header__menu"> <!-- 頁首菜單 -->
+        <div class="header__menu__toggle"> <!-- 菜單切換按鈕 -->
+            <span></span>
+        </div>
+        <div class="header__menu__container"> <!-- 菜單容器 -->
+            <nav class="header__nav"> <!-- 導航菜單 -->
+                <ul class="header__nav__list"> <!-- 導航列表 -->
+                    <li class="header__nav__list__item"> <!-- 列表項目 -->
+                        <a href="https://megrassgarden-n.com/" class="header__nav__list__item__link header__nav__list__item__link--current hoverRoll"> <!-- 當前鏈接 -->
+                            <span class="hoverRoll__mask"><span class="hoverRoll__text">TOP</span></span>
+                        </a>
+                    </li>
+                    <li class="header__nav__list__item"> <!-- 列表項目 -->
+                        <a href="https://megrassgarden-n.com/topics/" class="header__nav__list__item__link hoverRoll"> <!-- 主題鏈接 -->
+                            <span class="hoverRoll__mask"><span class="hoverRoll__text">TOPICS</span></span>
+                        </a>
+                    </li>
+                    <li class="header__nav__list__item"> <!-- 列表項目 -->
+                        <a href="https://megrassgarden-n.com/about/" class="header__nav__list__item__link hoverRoll"> <!-- 關於我們鏈接 -->
+                            <span class="hoverRoll__mask"><span class="hoverRoll__text">ABOUT US</span></span>
+                        </a>
+                    </li>
+                    <li class="header__nav__list__item"> <!-- 列表項目 -->
+                        <a href="https://megrassgarden-n.com/produce/" class="header__nav__list__item__link hoverRoll"> <!-- 產品鏈接 -->
+                            <span class="hoverRoll__mask"><span class="hoverRoll__text">PRODUCE</span></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header__sns"> <!-- 社交媒體導航 -->
+                <ul class="header__sns__list"> <!-- 社交媒體列表 -->
+                    <li class="header__sns__list__item"> <!-- Instagram 鏈接項目 -->
+                        <a href="https://www.instagram.com/megrass_garden_nagoya/" class="header__sns__list__item__link header__sns__list__item__link--ig" target="_blank"> <!-- 打開新窗口 -->
+                            <img src="圖片" width="20" height="20" alt="Instagram"> <!-- Instagram 圖標 -->
+                        </a>
+                    </li>
+                    <li class="header__sns__list__item"> <!-- note 鏈接項目 -->
+                        <a href="https://megrassgardennagoya-park.note.jp/" class="header__sns__list__item__link header__sns__list__item__link--nt" target="_blank"> <!-- 打開新窗口 -->
+                            <img src="圖片" width="46" height="20" alt="note"> <!-- note 圖標 -->
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <section class="hero ">
