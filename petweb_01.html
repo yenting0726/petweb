@@ -1,34 +1,49 @@
+<!DOCTYPE html>
 <html lang="zh-TW" class="scroll-smooth">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Zen+Kaku+Gothic+Antique&display=swap"
-        rel="stylesheet">
-    <meta charset="UTF-8">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>帶狗散步</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./petweb.css">
-    <link rel="icon" href="./dogweb/favicon (3).ico">
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FT8VCCHBV6"></script> <!-- 引入 Google Tag Manager -->
+    <meta charset="utf-8"> <!-- 設定字符編碼為 UTF-8 -->
+    <title>Megrass Garden Nagoya（メグラスガーデン ナゴヤ）</title> <!-- 網頁標題 -->
+
+    <meta http-equiv="content-language" content="zh-TW"> <!-- 指定網頁內容語言為繁體中文（台灣） -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- 指示 IE 使用最新的渲染模式 -->
+    <meta name="viewport" content="width=device-width"> <!-- 設定視口，以適應不同設備的寬度 -->
+
+    <link rel="apple-touch-icon" type="image/png" href="https://megrassgarden-n.com/images/apple-touch-icon-180x180.png" sizes="180x180"> <!-- 設定 Apple 觸控圖標 -->
+    <link rel="icon" type="image/png" href="https://megrassgarden-n.com/images/android-chrome-192x192.png" sizes="192x192"> <!-- 設定 Android Chrome 圖標 -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://megrassgarden-n.com/favicon.ico"> <!-- 設定網站的快捷方式圖標 -->
+
+    <!-- Open Graph 標籤，用於社交媒體分享 -->
+    <meta property="og:title" content="Megrass Garden Nagoya" /> <!-- 網頁標題 -->
+    <meta property="og:url" content="https://megrassgarden-n.com/" /> <!-- 網頁 URL -->
+    <meta property="og:image" content="https://megrassgarden-n.com/images/ogp.jpg"> <!-- 用於分享的圖片 -->
+    <meta property="og:type" content="website" /> <!-- 網頁類型 -->
+    <meta property="og:site_name" content="Megrass Garden Nagoya" /> <!-- 網站名稱 -->
+    <meta property="og:description" content="メグラスガーデン ナゴヤ 〒455-0028 愛知県名古屋市港区潮見町42番地" /> <!-- 網頁描述 -->
+    <meta name="Description" content="メグラスガーデン ナゴヤ 〒455-0028 愛知県名古屋市港区潮見町42番地"> <!-- 網頁的描述 -->
+    <meta name="twitter:card" content="summary_large_image"> <!-- Twitter 卡片類型 -->
+
+    <!-- Google Analytics 標籤 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FT8VCCHBV6"></script> <!-- 引入 Google Tag Manager -->
     <script>
       window.dataLayer = window.dataLayer || []; // 初始化數據層
       function gtag(){dataLayer.push(arguments);} // 定義 gtag 函數
       gtag('js', new Date()); // 設置當前時間
       gtag('config', 'G-FT8VCCHBV6'); // 配置 Google Analytics
     </script>
-	  <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?66cbc73e3a444ec5a4446c02ac1e02e5" charset="utf-8"></script>
+
+    <!-- 預連接到 Google 字體服務 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <!-- 引入字體樣式（已註解，未使用） -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
+    <!-- 引入 Typesquare 字體服務 -->
+    <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?66cbc73e3a444ec5a4446c02ac1e02e5" charset="utf-8"></script>
 
     <link rel="stylesheet" href="https://megrassgarden-n.com/css/main.css"> <!-- 引入主樣式表 -->
     <script src="https://megrassgarden-n.com/js/main.js"></script> <!-- 引入主 JavaScript 文件 -->
-
 </head>
+
 <body class="index"> <!-- 設定 body 的 class 為 index -->
 
 <div class="intro"> <!-- 介紹區域 -->
@@ -337,11 +352,11 @@
     </div>
 </div>
 <!-- 裝飾元素 5 --><!-- SVG 路徑 -->
- <div class="ornament ornament--ft index__ornament5"> 
+<!-- <div class="ornament ornament--ft index__ornament5"> 
     <svg class="ornament__path" viewBox="0 0 335 340" data-length="470"> 
-        <path d="M349.28,44.16c-5.88,2.3-11.68,4.85-17.38,7.65-59.43,28.11-105.93,79.78-127.55,141.64-11.07,31.24-27.85,59.48-49.88,83.92-22.12,24.56-48.4,44.19-77.78,58.19-19.44,9.01-37.42,20.7-53.6,34.49"/> 
+        <path d="M349.28,44.16c-5.88,2.3-11.68,4.85-17.38,7.65-59.43,28.11-105.93,79.78-127.55,141.64-11.07,31.24-27.85,59.48-49.88,83.92-22.12,24.56-48.4,44.19-77.78,58.19-19.44,9.01-37.42,20.7-53.6,34.49"/> SVG 路徑定義
     </svg>
-</div>
+</div> -->
 
 <footer class="footer"> <!-- 頁腳區域 -->
     <div class="footer__container"> <!-- 頁腳容器 -->

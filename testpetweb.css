@@ -864,303 +864,351 @@ body:not(.touch) .footer__partner a:hover:after {
     margin-left: 17.5rem; /* 左邊距 */
 }
 
-
-
+/* 社交媒體列表的樣式 */
 .header__sns__list {
-    align-items: center;
-    display: flex;
-    flex-flow: row nowrap;
-    gap: 0 2.2rem;
-    justify-content: flex-start
+    align-items: center; /* 垂直置中 */
+    display: flex; /* 使用彈性盒布局 */
+    flex-flow: row nowrap; /* 水平排列，不換行 */
+    gap: 0 2.2rem; /* 項目之間的間距 */
+    justify-content: flex-start; /* 項目從左側開始排列 */
 }
 
+/* 社交媒體列表項目的樣式 */
 .header__sns__list__item {
-    display: block;
-    overflow: hidden;
-    position: relative
+    display: block; /* 以區塊顯示 */
+    overflow: hidden; /* 隱藏溢出內容 */
+    position: relative; /* 相對定位 */
 }
 
+/* Instagram 鏈接的樣式 */
 .header__sns__list__item__link--ig {
-    display: block;
-    height: 2.4rem;
-    padding: .2rem 0;
-    width: 2.4rem
+    display: block; /* 以區塊顯示 */
+    height: 2.4rem; /* 高度 */
+    padding: .2rem 0; /* 上下內邊距 */
+    width: 2.4rem; /* 寬度 */
 }
 
+/* Instagram 圖片的樣式 */
 .header__sns__list__item__link--ig img {
-    display: block;
-    height: 2rem;
-    width: 2rem
+    display: block; /* 以區塊顯示 */
+    height: 2rem; /* 高度 */
+    width: 2rem; /* 寬度 */
 }
 
+/* 其他社交媒體鏈接的樣式 */
 .header__sns__list__item__link--nt {
-    display: block;
-    height: 2.4rem;
-    padding: .2rem 0;
-    width: 4.6rem
+    display: block; /* 以區塊顯示 */
+    height: 2.4rem; /* 高度 */
+    padding: .2rem 0; /* 上下內邊距 */
+    width: 4.6rem; /* 寬度 */
 }
 
+/* 其他社交媒體圖片的樣式 */
 .header__sns__list__item__link--nt img {
-    display: block;
-    height: 2rem;
-    width: 4.6rem
+    display: block; /* 以區塊顯示 */
+    height: 2rem; /* 高度 */
+    width: 4.6rem; /* 寬度 */
 }
 
+/* 頭部項目滑入動畫 */
 @keyframes headerItemSlideIn {
     0% {
-        transform: translateY(100%)
+        transform: translateY(100%); /* 從下方滑入 */
     }
-
     to {
-        transform: translateY(0)
+        transform: translateY(0); /* 回到原位 */
     }
 }
 
+/* 頭部項目淡入動畫 */
 @keyframes headerItemFadeIn {
     0% {
-        opacity: 0
+        opacity: 0; /* 初始透明度為 0 */
     }
-
     to {
-        opacity: 1
+        opacity: 1; /* 最終透明度為 1 */
     }
 }
 
+/* 媒體查詢，針對最大寬度 767px 的設備 */
 @media (max-width: 767px) {
     .header {
-        display:block;
-        height: 0;
-        left: 0;
-        position: absolute;
-        top: 0;
-        transform: none;
-        width: 100%;
-        z-index: 1000
+        display: block; /* 以區塊顯示 */
+        height: 0; /* 高度為 0 */
+        left: 0; /* 左邊距為 0 */
+        position: absolute; /* 絕對定位 */
+        top: 0; /* 上邊距為 0 */
+        transform: none; /* 無變形 */
+        width: 100%; /* 寬度為 100% */
+        z-index: 1000; /* 層級 */
     }
 
+    /* 固定頭部的樣式 */
     .header.stick {
-        position: absolute;
-        transform: translateY(-10rem)
+        position: absolute; /* 絕對定位 */
+        transform: translateY(-10rem); /* 向上移動 10rem */
     }
 
+    /* 固定頭部的樣式，當有 fix 類時 */
     .header.stick.fix {
-        position: fixed;
-        top: 0!important;
-        transform: translateY(0)
+        position: fixed; /* 固定定位 */
+        top: 0 !important; /* 強制設置上邊距為 0 */
+        transform: translateY(0); /* 回到原位 */
     }
 
+    /* 頭部背景的樣式 */
     .header__bg {
-        border-radius: 3.5rem;
-        box-shadow: 0 0 .5rem 0 rgba(0,0,0,.1);
-        height: 7rem;
-        left: calc(50% - 17.25rem);
-        opacity: 0;
-        top: 1.5rem;
-        transition: height,.5s cubic-bezier(.19,1,.22,1),opacity .1s linear .5s;
-        width: 34.5rem
+        border-radius: 3.5rem; /* 圓角 */
+        box-shadow: 0 0 .5rem 0 rgba(0,0,0,.1); /* 陰影 */
+        height: 7rem; /* 高度 */
+        left: calc(50% - 17.25rem); /* 左邊距 */
+        opacity: 0; /* 初始透明度為 0 */
+        top: 1.5rem; /* 上邊距 */
+        transition: height, .5s cubic-bezier(.19, 1, .22, 1), opacity .1s linear .5s; /* 過渡效果 */
+        width: 34.5rem; /* 寬度 */
     }
 
-    .header.open .header__bg,.header.stick .header__bg,.header.stick.open .header__bg {
-        opacity: 1;
-        transition: height,.5s cubic-bezier(.19,1,.22,1),opacity 0s linear
+    /* 當頭部開啟或固定時背景顯示 */
+    .header.open .header__bg,
+    .header.stick .header__bg,
+    .header.stick.open .header__bg {
+        opacity: 1; /* 透明度為 1 */
+        transition: height, .5s cubic-bezier(.19, 1, .22, 1), opacity 0s linear; /* 過渡效果 */
     }
 
-    .header.open .header__bg,.header.stick.open .header__bg {
-        height: 30rem
+    /* 開啟狀態下的背景高度 */
+    .header.open .header__bg,
+    .header.stick.open .header__bg {
+        height: 30rem; /* 高度 */
     }
 
+    /* 頭部標誌的樣式 */
     .header__logo {
-        left: 3rem;
-        position: absolute;
-        top: 2.6rem
+        left: 3rem; /* 左邊距 */
+        position: absolute; /* 絕對定位 */
+        top: 2.6rem; /* 上邊距 */
     }
 
+    /* 標誌鏈接的樣式 */
     .header__logo__link {
-        height: 4.8rem;
-        width: 10rem
+        height: 4.8rem; /* 高度 */
+        width: 10rem; /* 寬度 */
     }
 
+    /* 標誌信息的樣式 */
     .header__logo__info {
-        font-size: 1rem;
-        height: 2.4rem;
-        letter-spacing: 0;
-        line-height: 2.4em;
-        padding-left: 4rem
+        font-size: 1rem; /* 字體大小 */
+        height: 2.4rem; /* 高度 */
+        letter-spacing: 0; /* 字母間距 */
+        line-height: 2.4em; /* 行高 */
+        padding-left: 4rem; /* 左內邊距 */
     }
 
+    /* 標誌信息前的虛擬元素 */
     .header__logo__info:before {
-        height: 4.4rem;
-        left: 2rem;
-        top: calc(50% - 2.2rem);
-        width: 1px
+        height: 4.4rem; /* 高度 */
+        left: 2rem; /* 左邊距 */
+        top: calc(50% - 2.2rem); /* 垂直居中 */
+        width: 1px; /* 寬度 */
     }
 
+    /* 頭部菜單的樣式 */
     .header__menu {
-        box-sizing: border-box;
-        height: 0;
-        position: absolute;
-        right: 1.5rem;
-        top: 8.5rem;
-        width: 34.5rem
+        box-sizing: border-box; /* 包含內邊距和邊框 */
+        height: 0; /* 高度為 0 */
+        position: absolute; /* 絕對定位 */
+        right: 1.5rem; /* 右邊距 */
+        top: 8.5rem; /* 上邊距 */
+        width: 34.5rem; /* 寬度 */
     }
 
+    /* 菜單切換按鈕的樣式 */
     .header__menu__toggle {
-        cursor: pointer;
-        display: block;
-        height: 3.8rem;
-        position: absolute;
-        right: 1.6rem;
-        top: -5.4rem;
-        width: 3.8rem;
-        z-index: 10
+        cursor: pointer; /* 鼠標指標為手型 */
+        display: block; /* 以區塊顯示 */
+        height: 3.8rem; /* 高度 */
+        position: absolute; /* 絕對定位 */
+        right: 1.6rem; /* 右邊距 */
+        top: -5.4rem; /* 上邊距 */
+        width: 3.8rem; /* 寬度 */
+        z-index: 10; /* 層級 */
     }
 
-    .header__menu__toggle span,.header__menu__toggle:after,.header__menu__toggle:before {
-        background-color: #005c55;
-        border-radius: .3rem;
-        content: "";
-        display: block;
-        height: .6rem;
-        left: calc(50% - .3rem);
-        position: absolute;
-        top: calc(50% - .3rem);
-        width: .6rem
-    }
-
+    /* 菜單切換按鈕的內部元素樣式 */
+    .header__menu__toggle span,
+    .header__menu__toggle:after,
     .header__menu__toggle:before {
-        top: calc(50% + .8rem)
+        background-color: #e21414; /* 背景顏色 */
+        border-radius: .3rem; /* 圓角 */
+        content: ""; /* 空內容 */
+        display: block; /* 以區塊顯示 */
+        height: .6rem; /* 高度 */
+        left: calc(50% - .3rem); /* 水平居中 */
+        position: absolute; /* 絕對定位 */
+        top: calc(50% - .3rem); /* 垂直居中 */
+        width: .6rem; /* 寬度 */
     }
 
+    /* 菜單切換按鈕的上方元素 */
+    .header__menu__toggle:before {
+        top: calc(50% + .8rem); /* 向下偏移 */
+    }
+
+    /* 菜單切換按鈕的中間元素 */
     .header__menu__toggle span {
-        top: calc(50% - .3rem)
+        top: calc(50% - .3rem); /* 垂直居中 */
     }
 
+    /* 菜單切換按鈕的下方元素 */
     .header__menu__toggle:after {
-        top: calc(50% - 1.4rem)
+        top: calc(50% - 1.4rem); /* 向上偏移 */
     }
 
+    /* 當頭部開啟時，切換按鈕的樣式 */
     .header.open .header__menu__toggle span {
-        display: none
+        display: none; /* 隱藏中間元素 */
     }
 
-    .header.open .header__menu__toggle:after,.header.open .header__menu__toggle:before {
-        background-color: #005c55;
-        border-radius: 0;
-        content: "";
-        height: .3rem;
-        left: calc(50% - .85rem);
-        position: absolute;
-        top: calc(50% - .15rem);
-        width: 1.7rem
-    }
-
+    /* 當頭部開啟時，切換按鈕的上下元素樣式 */
+    .header.open .header__menu__toggle:after,
     .header.open .header__menu__toggle:before {
-        transform: rotate(-45deg)
+        background-color: #005c55; /* 背景顏色 */
+        border-radius: 0; /* 無圓角 */
+        content: ""; /* 空內容 */
+        height: .3rem; /* 高度 */
+        left: calc(50% - .85rem); /* 水平居中 */
+        position: absolute; /* 絕對定位 */
+        top: calc(50% - .15rem); /* 垂直居中 */
+        width: 1.7rem; /* 寬度 */
     }
 
+    /* 當頭部開啟時，切換按鈕上方元素的旋轉 */
+    .header.open .header__menu__toggle:before {
+        transform: rotate(-45deg); /* 逆時針旋轉 */
+    }
+
+    /* 當頭部開啟時，切換按鈕下方元素的旋轉 */
     .header.open .header__menu__toggle:after {
-        transform: rotate(45deg)
+        transform: rotate(45deg); /* 順時針旋轉 */
     }
 
+    /* 菜單容器的樣式 */
     .header__menu__container {
-        background-color: transparent;
-        clip-path: inset(0 0 100% 0);
-        display: block;
-        height: 23rem;
-        opacity: 0;
-        overflow: hidden;
-        padding: .8rem 3rem 0;
-        position: absolute;
-        transition: opacity .1s linear 0s,clip-path .5s cubic-bezier(.19,1,.22,1) 0s;
-        visibility: hidden;
-        width: 100%
+        background-color: transparent; /* 背景顏色為透明 */
+        clip-path: inset(0 0 100% 0); /* 隱藏內容 */
+        display: block; /* 以區塊顯示 */
+        height: 23rem; /* 高度 */
+        opacity: 0; /* 初始透明度為 0 */
+        overflow: hidden; /* 隱藏溢出內容 */
+        padding: .8rem 3rem 0; /* 內邊距 */
+        position: absolute; /* 絕對定位 */
+        transition: opacity .1s linear 0s, clip-path .5s cubic-bezier(.19, 1, .22, 1) 0s; /* 過渡效果 */
+        visibility: hidden; /* 隱藏 */
+        width: 100%; /* 寬度 */
     }
 
+    /* 當頭部開啟時，菜單容器的樣式 */
     .header.open .header__menu__container {
-        clip-path: inset(0 0 0 0);
-        opacity: 1;
-        visibility: visible
+        clip-path: inset(0 0 0 0); /* 顯示內容 */
+        opacity: 1; /* 透明度為 1 */
+        visibility: visible; /* 顯示 */
     }
 
+    /* 導航的樣式 */
     .header__nav {
-        flex: 0 0 auto;
-        margin-left: auto
+        flex: 0 0 auto; /* 不縮放 */
+        margin-left: auto; /* 自動左邊距 */
     }
 
+    /* 導航列表的樣式 */
     .header__nav__list {
-        display: block
+        display: block; /* 以區塊顯示 */
     }
 
+    /* 導航列表項目的樣式 */
     .header__nav__list__item {
-        text-align: center
+        text-align: center; /* 文字置中 */
     }
 
-    .header__nav__list__item,.header__nav__list__item a {
-        margin-left: auto;
-        margin-right: auto;
-        width: -moz-fit-content;
-        width: fit-content
-    }
-
+    /* 導航列表項目及其鏈接的樣式 */
+    .header__nav__list__item,
     .header__nav__list__item a {
-        display: block
+        margin-left: auto; /* 自動左邊距 */
+        margin-right: auto; /* 自動右邊距 */
+        width: -moz-fit-content; /* Mozilla 特有屬性 */
+        width: fit-content; /* 自適應內容寬度 */
     }
 
+    /* 導航項目鏈接的樣式 */
+    .header__nav__list__item a {
+        display: block; /* 以區塊顯示 */
+    }
+
+    /* 當導航項目有當前鏈接時的樣式 */
     .header__nav__list__item:has(.header__nav__list__item__link--current):after {
-        bottom: auto;
-        content: "";
-        height: .6rem;
-        left: -1.3rem;
-        top: calc(50% - .3rem);
-        width: .6rem
+        bottom: auto; /* 無底部距離 */
+        content: ""; /* 空內容 */
+        height: .6rem; /* 高度 */
+        left: -1.3rem; /* 左邊距 */
+        top: calc(50% - .3rem); /* 垂直居中 */
+        width: .6rem; /* 寬度 */
     }
 
+    /* 導航項目鏈接的樣式 */
     .header__nav__list__item__link {
-        font-size: 1.4rem;
-        letter-spacing: .06em;
-        line-height: 1.7142857143em;
-        padding: .5rem 0
+        font-size: 1.4rem; /* 字體大小 */
+        letter-spacing: .06em; /* 字母間距 */
+        line-height: 1.7142857143em; /* 行高 */
+        padding: .5rem 0; /* 上下內邊距 */
     }
 
+    /* 社交媒體區域的樣式 */
     .header__sns {
-        margin: 1.2rem 0 0 -.3rem
+        margin: 1.2rem 0 0 -.3rem; /* 外邊距 */
     }
 
+    /* 社交媒體列表的樣式 */
     .header__sns__list {
-        display: block
+        display: block; /* 以區塊顯示 */
     }
 
+    /* Instagram 鏈接的樣式 */
     .header__sns__list__item__link--ig {
-        display: block;
-        height: 2.4rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding: .3rem;
-        width: 2.4rem
+        display: block; /* 以區塊顯示 */
+        height: 2.4rem; /* 高度 */
+        margin-left: auto; /* 自動左邊距 */
+        margin-right: auto; /* 自動右邊距 */
+        padding: .3rem; /* 內邊距 */
+        width: 2.4rem; /* 寬度 */
     }
 
+    /* Instagram 圖片的樣式 */
     .header__sns__list__item__link--ig img {
-        display: block;
-        height: 1.8rem;
-        width: 1.8rem
+        display: block; /* 以區塊顯示 */
+        height: 1.8rem; /* 高度 */
+        width: 1.8rem; /* 寬度 */
     }
 
+    /* 其他社交媒體鏈接的樣式 */
     .header__sns__list__item__link--nt {
-        display: block;
-        height: 2.4rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: .6rem;
-        padding: .2rem 0;
-        width: 4.6rem
+        display: block; /* 以區塊顯示 */
+        height: 2.4rem; /* 高度 */
+        margin-left: auto; /* 自動左邊距 */
+        margin-right: auto; /* 自動右邊距 */
+        margin-top: .6rem; /* 上邊距 */
+        padding: .2rem 0; /* 上下內邊距 */
+        width: 4.6rem; /* 寬度 */
     }
 
+    /* 其他社交媒體圖片的樣式 */
     .header__sns__list__item__link--nt img {
-        display: block;
-        height: 2rem;
-        width: 4.6rem
+        display: block; /* 以區塊顯示 */
+        height: 2rem; /* 高度 */
+        width: 4.6rem; /* 寬度 */
     }
 }
+
+
 
 .hoverRoll__mask {
     display: block;
@@ -4575,7 +4623,7 @@ body.active .produce__hero__visual__photo img {
 
 @media (max-width: 767px) {
     .topics__header {
-        background-color:#fff;
+        background-color:#d19292;
         padding-top: 13.7rem
     }
 
