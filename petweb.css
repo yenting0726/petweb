@@ -1,3 +1,11 @@
+@import url("./fonts/ZenKakuGothicAntique-Black.ttf");
+.zen-kaku-gothic-antique-regular {
+  font-family: "Kaisei Decol", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 /*! destyle.css v2.0.2 | MIT License | https://github.com/nicolas-cusan/destyle.css */
 *,:after,:before {
     border-style: solid; /* 設定邊框樣式為實線 */
@@ -5,10 +13,12 @@
     box-sizing: border-box; /* 包含邊框和內邊距在內的計算方式 */
 }
 
+
 html {
     -webkit-text-size-adjust: 100%; /* 防止在移動設備上自動調整字體大小 */
     -webkit-tap-highlight-color: transparent; /* 移動設備上點擊高亮顏色透明 */
     line-height: 1.15; /* 設定行高 */
+    font-family: "Kaisei Decol", sans-serif; /* 設定字體 */
 }
 
 body {
@@ -254,7 +264,7 @@ body,html {
     -webkit-text-size-adjust: 100%; /* 防止字體大小調整 */
     -moz-text-size-adjust: 100%; /* 防止字體大小調整 */
     text-size-adjust: 100%; /* 防止字體大小調整 */
-    font-family: Aoto Gothic DemiBold,Roboto,Noto Sans JP,sans-serif; /* 設定字體 */
+    font-family: "Kaisei Decol", sans-serif; /* 設定字體 */
     font-size: calc(var(--vw)/144); /* 計算字體大小 */
     font-weight: 400; /* 設定字體粗細 */
 }
@@ -348,7 +358,7 @@ html.transit-ready.transit body:after {
 }
 
 .footer__info em {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif; /* 設定字體 */
+    font-family: "Kaisei Decol", sans-serif; /* 設定字體 */
     font-style: normal; /* 字體樣式 */
     font-weight: 700; /* 字體粗細 */
 }
@@ -362,7 +372,7 @@ html.transit-ready.transit body:after {
 }
 
 .footer__partner em {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif; /* 設定字體 */
+    font-family:"Zen Kaku Gothic Antique", sans-serif; /* 設定字體 */
     font-style: normal; /* 字體樣式 */
     font-weight: 700; /* 字體粗細 */
 }
@@ -402,7 +412,7 @@ body:not(.touch) .footer__partner a:hover:after {
 .footer__backtop {
     color: #005c55; /* 字體顏色 */
     display: block; /* 設定為塊級元素 */
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif; /* 設定字體 */
+    font-family:"Zen Kaku Gothic Antique", sans-serif; /* 設定字體 */
     font-size: 1.3rem; /* 字體大小 */
     font-weight: 700; /* 字體粗細 */
     height: auto; /* 高度自動 */
@@ -612,7 +622,7 @@ body:not(.touch) .footer__partner a:hover:after {
 
 .footintermission__label {
     color: #fff; /* 字體顏色為白色 */
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif; /* 設定字體 */
+    font-family: "Zen Kaku Gothic Antique", sans-serif; /* 設定字體 */
     font-size: 6rem; /* 字體大小 */
     font-weight: 700; /* 字體粗細 */
     height: auto; /* 高度自動 */
@@ -788,7 +798,7 @@ body:not(.touch) .footer__partner a:hover:after {
 .header__logo__info {
     color: #094; /* 字體顏色 */
     display: block; /* 設定為塊級元素 */
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif; /* 設定字體 */
+    font-family: "Kaisei Decol", sans-serif; /* 設定字體 */
     font-size: 1.4rem; /* 字體大小 */
     font-weight: 700; /* 字體粗細 */
     height: 2.4rem; /* 高度 */
@@ -1536,7 +1546,7 @@ body.active .intro__logo {
 
 .arrowborderlink {
     display: block;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     height: auto;
@@ -1763,7 +1773,7 @@ body.contentsready .ornament--fv .ornament__path path {
 }
 
 .sectiontitle__en {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol", sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -1893,7 +1903,7 @@ body.active .about__hero__visual__img {
 
 .about__hero__main__lead,.about__hero__main__title {
     color: #005c55;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-weight: 700
 }
 
@@ -2023,7 +2033,7 @@ body.active .about__hero__visual__img {
 
 .about__intro__lead {
     flex: 0 0 48rem;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol", sans-serif;
     font-size: 3.6rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -2072,7 +2082,7 @@ body.active .about__hero__visual__img {
 }
 
 .about__section__title__en {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -2114,7 +2124,7 @@ body.active .about__hero__visual__img {
 }
 
 .about__section__visual__catch,.about__section__visual__text {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-weight: 700;
     letter-spacing: .06em;
     text-align: center
@@ -2181,7 +2191,7 @@ body.active .about__hero__visual__img {
     }
 
     .about__section__visual__catch {
-        font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+        font-family: "Kaisei Decol", sans-serif;
         font-size: 3.2rem;
         font-weight: 700;
         letter-spacing: .06em;
@@ -2310,7 +2320,7 @@ body.active .index__firstview__bg {
 
 .index__firstview__hero__open {
     color: #094;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-size: 3.6rem;
     font-weight: 700;
     letter-spacing: 0;
@@ -2731,7 +2741,7 @@ body.active .index__firstview__bg {
 }
 
 .index__concept__catch {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol", sans-serif;
     font-size: 6.4rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -2748,7 +2758,7 @@ body.active .index__firstview__bg {
 }
 
 .index__concept__text p {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -2979,7 +2989,7 @@ body.active .index__firstview__bg {
 
 .index__concept__instagram__link__button {
     display: block;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family:"Kaisei Decol", sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     height: auto;
@@ -3016,7 +3026,7 @@ body.active .index__firstview__bg {
     }
 
     .index__concept__catch {
-        font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+        font-family: "Kaisei Decol", sans-serif;
         font-size: 3.2rem;
         font-weight: 700;
         letter-spacing: .06em;
@@ -3231,7 +3241,7 @@ body.active .index__firstview__bg {
 
     .index__concept__instagram__link__button {
         display: block;
-        font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+        font-family:"Kaisei Decol", sans-serif;
         font-size: 1.4rem;
         font-weight: 700;
         height: auto;
@@ -3340,7 +3350,7 @@ body.active .index__firstview__bg {
 }
 
 .index__produce__catch {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol", sans-serif;
     font-size: 6.4rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -3421,7 +3431,7 @@ body.active .index__firstview__bg {
     }
 
     .index__produce__catch {
-        font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+        font-family: "Kaisei Decol", sans-serif;
         font-size: 3.2rem;
         font-weight: 700;
         letter-spacing: .06em;
@@ -3506,7 +3516,7 @@ body.active .index__firstview__bg {
 
 .index__intermission2__text {
     color: #fff;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 6rem;
     font-weight: 700;
     height: auto;
@@ -3732,7 +3742,7 @@ body.active .index__firstview__bg {
 
 .produce__hero__main__lead,.produce__hero__main__title {
     color: #005c55;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-weight: 700
 }
 
@@ -3884,7 +3894,7 @@ body.active .produce__hero__visual__photo img {
 }
 
 .produce__hero__visual__link__name {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 1.8rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -4067,7 +4077,7 @@ body.active .produce__hero__visual__photo img {
 }
 
 .produce__profile__header__num {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -4082,7 +4092,7 @@ body.active .produce__hero__visual__photo img {
 }
 
 .produce__profile__header__lead {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 6.4rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -4162,7 +4172,7 @@ body.active .produce__hero__visual__photo img {
 }
 
 .produce__profile__portrait__name__ja {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 4.8rem;
     font-weight: 700;
     letter-spacing: .06em;
@@ -4268,7 +4278,7 @@ body.active .produce__hero__visual__photo img {
     }
 
     .produce__profile__header__lead {
-        font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+        font-family: "Kaisei Decol",sans-serif;
         font-size: 3.2rem;
         font-weight: 700;
         letter-spacing: .06em;
@@ -4472,7 +4482,7 @@ body.active .produce__hero__visual__photo img {
 }
 
 .topics__header__title__en,.topics__header__title__ja {
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-weight: 700
 }
 
@@ -4687,7 +4697,7 @@ body.mswin .topics__categories__item .hoverRoll__mask {
 .topics__index__block__new__text {
     color: #fff;
     display: block;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 1.3rem;
     font-weight: 700;
     height: 2.4rem;
@@ -5206,7 +5216,7 @@ body.mswin .topics__article__header__category {
 
 .topics__article__header__title {
     flex: 0 0 100%;
-    font-family: Aoto Gothic Extra Bold,Roboto,Noto Sans JP,sans-serif;
+    font-family: "Kaisei Decol",sans-serif;
     font-size: 3.6rem;
     font-weight: 700;
     letter-spacing: .06em;
